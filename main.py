@@ -1,5 +1,6 @@
-# Python text RPG
+# Hi there! This is the source code for my RPG game 'Fading Vale'. 
 
+#MODULES#
 import sys
 import os
 import time
@@ -1548,6 +1549,7 @@ def help_menu():
 #| e1 | e2 | e3 | e4 | e5 |
 #--------------------------
 
+#MAP DICTIONARY#
 {
 'ZONENAME': 'zonename',
 'DESCRIPTION': 'description',
@@ -1567,6 +1569,7 @@ solved_places = {'A1: Ancient Ruins': False, 'A2: Bandits Hideout': False, 'A3: 
                 'D1: Mushroom Hut': False, 'D2: Highlands': False, 'D3: Mountain Cabin': False, 'D4: Cave': False, 'D5: Temple': False,
                 'E1: Swamplands': False, 'E2: Elf Village': False, 'E3: Stronghold': False, 'E4: Forest': False, 'E5: Orc Camp': False,}
 
+#FULL ZONEMAP#
 zonemap = {
     'A1: Ancient Ruins': {
       'ZONENAME': "Ancient Ruins",
@@ -2097,10 +2100,8 @@ def setup_game():
       sys.exit()
 
 os.system('clear')
-print('#~~~~~~~~~~~~~~~~~~~~~~~~~~~~#')
-print("        #Let's begin.#        ")
-print('#~~~~~~~~~~~~~~~~~~~~~~~~~~~~#')
 
+#execute the game!#
 title_screen()
 main_game_loop()
 
